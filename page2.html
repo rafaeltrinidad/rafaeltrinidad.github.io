@@ -1,25 +1,52 @@
 <html>
 
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title> Image</title>
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<nav>
-  <a href = "index.html"> Text</a>
-  <a href = "page2.html"> Image</a>
-  <a href = "page3.html"> Video</a>
-  <a href = "page4.html"> Table</a>
-</nav>
+	<!--This website helped me with the horizontal navigation bar: https://www.w3schools.com/css/css_navbar_horizontal.asp
+	-->
+
+	<!--These websites helped me with making my website responsive: https://www.w3schools.com/html/html_responsive.asp
+	https://css-tricks.com/scaled-proportional-blocks-with-css-and-javascript/ -->
+
+<ul>
+	<li><a href = "index.html"> Text</a></li>
+	<li><a class= "active" href = "page2.html"> Image</a></li>
+	<li><a href = "page3.html"> Video</a></li>
+	<li><a href = "page4.html"> Table</a></li>
+	<li><a href = "page5.html"> Email</a></li>
+</ul>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 <div class = "grid-container">
-  <div class="grid-item"> <img src="game-meme.png" width="400px" height="300px" alt="game-meme"/> </div>
-  <div class="grid-item"> <img src="hot-cool-meme.jpg" width="350px" height="300px" alt="hot-cool-meme"/> </div>
-  <div class="grid-item"> <img src="jeep-meme.jpg" width="400px" height="300px" alt="jeep-meme"/> </div>
-  <div class="grid-item"><img src="Wake-up-meme.jpg" width="400px" height="300px" alt="Wake-up-meme"/> </div>
-  <div class="grid-item"><img src="Zoom-meme.png" width="350px" height="300px" alt="Zoom-meme"/> </div>
-  <div class="grid-item"><img src="Zoom-meme-2.jpg" width="450px" height="300px" alt="Zoom-meme-2"/> </div>
+  <div class="grid-item"> <img class="myImages" id="myImg" src="game-meme.png" style="max-width:100%;height:auto;" width="400px" height="300px" alt="game-meme"/> </div>
+  <div class="grid-item"> <img class="myImages" id="myImg" src="hot-cool-meme.jpg" style="max-width:100%;height:auto;" width="350px" height="300px" alt="hot-cool-meme"/> </div>
+  <div class="grid-item"> <img class="myImages" id="myImg" src="jeep-meme.jpg" style="max-width:100%;height:auto;" width="400px" height="300px" alt="jeep-meme"/> </div>
+  <div class="grid-item"> <img class="myImages" id="myImg" src="Wake-up-meme.jpg" style="max-width:100%;height:auto;" width="400px" height="300px" alt="Wake-up-meme"/> </div>
+  <div class="grid-item"> <img class="myImages" id="myImg" src="Zoom-meme.png" style="max-width:100%;height:auto;" width="350px" height="300px" alt="Zoom-meme"/> </div>
+  <div class="grid-item"> <img class="myImages" id="myImg" src="Zoom-meme-2.jpg" style="max-width:100%;height:auto;" width="450px" height="300px" alt="Zoom-meme-2"/> </div>
+  <div class="grid-item"> <img class="myImages" id="myImg" src="et_bernie.jpeg" style="max-width:100%;height:auto;" width="400px" height="300px" alt="et_bernie"/> </div>
+  <div class="grid-item"> <img class="myImages" id="myImg" src="back_to_the_future_bernie.jpeg" style="max-width:100%;height:auto;" width="400px" height="300px" alt="back_to_the_future_bernie"/> </div>
+  <div class="grid-item"> <img class="myImages" id="myImg" src="fun.jpg" style="max-width:100%;height:auto;" width="400px" height="300px" alt="fun"/> </div>
+  <div class="grid-item"> <img class="myImages" id="myImg" src="got_bernie.jpeg" style="max-width:100%;height:auto;" width="400px" height="300px" alt="got_bernie"/> </div>
+  <div class="grid-item"> <img class="myImages" id="myImg" src="nuggets.jpg" style="max-width:100%;height:auto;" width="400px" height="300px" alt="nuggets"/> </div>
+  <div class="grid-item"> <img class="myImages" id="myImg" src="endgame.jpg" style="max-width:100%;height:auto;" width="400px" height="300px" alt="endgame"/> </div>
+
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+<!-- Modal Content (The Image) -->
+<img class="modal-content" id="img01">
+
 </div>
 
 </body>
+
+<script src="main.js"></script>
+
 </html>
