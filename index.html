@@ -1,16 +1,22 @@
 <html>
 
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title> Text</title>
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<nav>
-	<a href = "index.html"> Text</a>
-	<a href = "page2.html"> Image</a>
-	<a href = "page3.html"> Video</a>
-	<a href = "page4.html"> Table</a>
-</nav>
+	<!--This website helped me with the horizontal navigation bar https://www.w3schools.com/css/css_navbar_horizontal.asp
+	-->
+<ul>
+	<li><a class= "active" href = "index.html"> Text</a></li>
+	<li><a href = "page2.html"> Image</a></li>
+	<li><a href = "page3.html"> Video</a></li>
+	<li><a href = "page4.html"> Table</a></li>
+	<li><a href = "page5.html"> Email</a></li>
+</ul>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 <form>
 		<label>First name:</label><br>
@@ -25,5 +31,9 @@
 	<input type="submit" value="Submit">
 </form>
 
+
 </body>
+
+<script src="main.js"></script>
+
 </html>
